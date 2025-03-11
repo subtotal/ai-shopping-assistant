@@ -9,7 +9,7 @@ const Chat = () => {
   return (
     <div className='flex flex-col w-full h-screen p-8 pt-24 items-center justify-center bg-black'>
       <div className="flex flex-col w-full max-w-[1000px] h-full justify-between items-center space-y-8">
-        <ul className='flex flex-col w-full flex-1 overflow-clip p-4 space-y-4'>
+        <ul className='flex flex-col w-full flex-1 overflow-y-scroll p-4 space-y-4'>
           {messages.map(m => (
             <li key={m.id} className='flex flex-col space-y-2 hover:bg-white/5'>
               <span className='text-sm text-white font-semibold'>{m.role === 'user' ? 'You' : 'Shopping Assistant'}</span>
